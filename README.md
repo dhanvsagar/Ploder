@@ -17,3 +17,7 @@ Ideo to PoC
 - Security and hardening
 - Authentication/Authorization
 
+
+Inital Outline
+
+![Draft diagram](https://github.com/dhanvsagar/Ploder/blob/main/docs/Ploder.drawio.png)
