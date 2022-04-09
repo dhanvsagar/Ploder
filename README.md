@@ -12,7 +12,7 @@ Workflow Automation
  - Terraform to create the AWS infrastructure
  - CI/CD or GitOps
 
-Ideo to PoC 
+Idea to PoC 
   - Microservice to Upload  
 - Security and hardening
 - Authentication/Authorization
