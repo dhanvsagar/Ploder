@@ -22,5 +22,14 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region = "ca-central-1"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
+  region = "${var.region}" "ca-central-1"
+}
+
+
+resource "aws_s3_bucket" "media" {
+    bucket = "${var.bucket_name}"
+    acl = "${var.acl_value}"
+  
 }
