@@ -1,9 +1,9 @@
-## Ploder (Photouploader)
+## Ploder (Photo uploader)
 
 ### Background
 As a photographer, I often find it challenging to share my photos in multiple formats across various social media platforms.\
-This pet project is being developed (as a PoC) for addressing the same.
-The idea is to\
+This pet project is being developed (as a PoC) for addressing the same.\
+The idea is to
  - Upload an image from a GUI to S3 bucket
  - Trigger Lambda on upload to do the required image modifications based on the platform, add appropriate metadata and upload to the relevent social media platforms.
 
