@@ -2,11 +2,11 @@
 
 # Common variables
 variable "access_key" {
-    default = "<YOUR ACCESS KEY>"
+    default = ""
 }
 
 variable "secret_key" {
-  default = "<YOUR SECRET KEY>"
+  default = ""
 }
 
 variable "region" {
@@ -15,9 +15,10 @@ variable "region" {
 
 
 # Varables for S3 media bucket
-variable "bucket_name" {}
+variable "bucket_name" {
+    default = "raw-img"
+}
 
 variable "acl_value" {
-    default = "private"
-  
+    default = "private" 
 }
