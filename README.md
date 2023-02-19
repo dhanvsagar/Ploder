@@ -3,7 +3,7 @@
 ### Background
 As a photographer, I often find it challenging to 
  - Upload/share my photos in multiple formats across various social media platforms with appropriate metadata.\
- - Store the original quality images for long term for future use
+ - Store the original quality images for long term for future use\
 This pet project is being developed (as a PoC) for addressing the same.\
 The idea is to
  - Upload an image from a GUI to S3 bucket
