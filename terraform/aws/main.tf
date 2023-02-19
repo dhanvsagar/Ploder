@@ -14,17 +14,16 @@ terraform{
 
 terraform {
     backend "s3" {
-        bucket = "ploader_state"
+        bucket = "ploader-state"
         key = "configurations/"
         region = "ca-central-1"
     }
 }
 
 provider "aws" {
-  profile = "default"
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
-  region = "${var.region}" "ca-central-1"
+  region = "${var.region}"
 }
 
 
