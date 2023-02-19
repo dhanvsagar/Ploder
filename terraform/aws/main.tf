@@ -15,7 +15,7 @@ terraform{
 terraform {
     backend "s3" {
         bucket = "ploader-state"
-        key = "configurations/"
+        key = "configurations/terraform.tfstate"
         region = "ca-central-1"
     }
 }
@@ -30,5 +30,25 @@ provider "aws" {
 resource "aws_s3_bucket" "media" {
     bucket = "${var.bucket_name}"
     acl = "${var.acl_value}"
-  
+}
+
+resource "aws_s3_bucket" "static-ui" {
+    bucket = "${var.static_bucket_name}"
+    acl = "${var.static_acl_value}"
+
+    website {
+        index_document = "index.html"
+        error_document = "error.html"
+
+        routing_rules = <<EOF
+    [{
+        "Condition": {
+            "KeyPrefixEquals": "docs/"
+        },
+        "Redirect": {
+            "ReplaceKeyPrefixWith": "documents/"
+        }
+    }]
+    EOF
+    }
 }

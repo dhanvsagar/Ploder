@@ -22,3 +22,12 @@ variable "bucket_name" {
 variable "acl_value" {
     default = "private" 
 }
+
+# Variables for S3 bucket for static UI 
+variable "static_bucket_name" {
+    default = "ploder-static-ui"
+}
+
+variable "static_acl_value" {
+    default = "public-read" 
+}
