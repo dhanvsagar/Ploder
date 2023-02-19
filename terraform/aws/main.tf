@@ -30,5 +30,9 @@ provider "aws" {
 resource "aws_s3_bucket" "media" {
     bucket = "${var.bucket_name}"
     acl = "${var.acl_value}"
-  
+}
+
+resource "aws_s3_bucket" "static-ui" {
+    bucket = "${var.static_bucket_name}"
+    acl = "${var.static_acl_value}"
 }
