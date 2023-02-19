@@ -15,7 +15,7 @@ terraform{
 terraform {
     backend "s3" {
         bucket = "ploader-state"
-        key = "configurations/"
+        key = "configurations/terraform.tfstate"
         region = "ca-central-1"
     }
 }
